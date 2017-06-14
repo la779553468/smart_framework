@@ -14,6 +14,7 @@ import java.util.Map;
  *   将其注解类型为controller和service的class放入set集合中
  * 3.遍历class集合，将其类名与初始化的类实例增加到map中，通过此map获取类实例，若考虑切面编程，则类实例应为代理对象
  * 4.遍历class集合，获取类的属性对象，判断其是否存在injection注解，若存在，将field设置为可访问，将属性对应的实例注入到map中该class对应的实例中
+ *
  */
 public class IocHelper {
     static {
