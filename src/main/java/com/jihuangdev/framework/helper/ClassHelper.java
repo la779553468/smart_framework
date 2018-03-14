@@ -59,6 +59,7 @@ public class ClassHelper {
     public static Set<Class<?>> getClassSetBySuper(Class<?> superClass) {
         Set<Class<?>> classSet = new HashSet<Class<?>>();
         for (Class cls : CLASS_SET) {
+            //isAssignableFrom 判断判定此 Class 对象所表示的类或接口与指定的cls参数所表示的类或接口是否相同，或是否是其超类或超接口，class
             if (superClass.isAssignableFrom(cls) && !superClass.equals(cls)) {
                 classSet.add(cls);
             }

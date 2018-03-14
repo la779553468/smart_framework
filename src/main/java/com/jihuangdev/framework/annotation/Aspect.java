@@ -3,7 +3,7 @@ package com.jihuangdev.framework.annotation;
 import java.lang.annotation.*;
 
 /**
- * 代理类注解
+ * value 瀹氫箟闇�瑕佹嫤鎴殑annotation
  * Created by wancan on 2016/5/21.
  */
 @Target(ElementType.TYPE)
